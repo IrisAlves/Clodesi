@@ -59,6 +59,7 @@ export const firebaseConfig = {
     PagAjustesPage,
     PagChaquetasPage,
     PagChaq1Page,
+    PagChaq2Page,
     PagJerseyPage,
     PagJersey1Page,
     PagJersey2Page
