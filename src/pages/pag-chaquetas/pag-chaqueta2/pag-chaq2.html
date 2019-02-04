@@ -1,0 +1,22 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Cazadora Plumón</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-slides class="image-slider" loop="true" >
+      <ion-slide *ngFor="let img of images">
+        <img src="../../../assets/imgs/chaquetas/chaqueta2/{{img}}" class="thum-img" imageViewer>
+      </ion-slide>
+    </ion-slides>
+    
+      <button ion-button color="danger"  icon-only><ion-icon name="heart"></ion-icon></button>
+      <button ion-button  color="danger" ><a href="https://www.zara.com/es/es/cazadora-plum%C3%ADfero-capucha-p08073223.html?v1=8363277&v2=1180323" class="button button-dark">Comprar</a></button>
+    
+  
+  </ion-content>

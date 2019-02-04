@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle icon-only >
+          <ion-icon name="menu"></ion-icon>
+      </button>
+
+    <img src="../../assets/imgs/logo.PNG" height="110" width="230" color="blue" margin="auto"  display="block"/>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <h2 class="titulo">Bienvenid@</h2>
+  <p>Esta usted en Clodesi, donde puedes ver todos los diferentes estilos en uno. Podra guardar en Favoritos todos aquellos articulos que le interesen, y tambien podra ir directamente a su destino de compra.</p>
+  <ion-list>
+     <button ion-button (click)="pagChaq()" block>Chaquetas</button>
+     <button ion-button (click)="pagJer()" block>Jersey</button>
+  </ion-list>
+  <p>Proximamente tambien habra Pantalones y Zapatos.</p>
+</ion-content>

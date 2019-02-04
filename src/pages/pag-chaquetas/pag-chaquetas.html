@@ -1,0 +1,42 @@
+<!--
+  Pagina de lista de chaquetas
+-->
+<ion-header>
+
+    <button  block ion-button [menuToggle]="activeMenu" icon-only>
+        <ion-icon name="menu"></ion-icon>
+        <ion-title>Chaquetas</ion-title>
+    </button>
+    
+</ion-header>
+
+
+<ion-content class="card-listachaq">
+  <ion-card>
+    <img src="../../assets/imgs/chaquetas/chaqueta1/1peq.jpg" width="50" height="190" />
+    <div class="card-titulo" (click)="abrirchaq1()">Cazadora Plumón</div>
+    <div class="card-subtitulo">59,95€</div>
+  </ion-card> 
+  <ion-card>
+    <img src="../../assets/imgs/chaquetas/chaqueta2/1peq.jpg" width="50" height="190" />
+    <div class="card-titulo" (click)="abrirchaq2()">Cazadora Biker</div>
+    <div class="card-subtitulo">25,99€</div>
+  </ion-card> 
+  <ion-card>
+      <img src="../../assets/imgs/chaquetas/chaqueta3/1.jpg" width="50" height="190" />
+      <div class="card-titulo">Abrigo Paño</div>
+      <div class="card-subtitulo">59,99€</div>
+    </ion-card>
+    <ion-card>
+        <img src="../../assets/imgs/chaquetas/chaqueta4/1.jpg" width="50" height="190" />
+        <div class="card-titulo">Abrigo Padding</div>
+        <div class="card-subtitulo">59,99€</div>
+      </ion-card>
+      <ion-fab bottom>
+          <button ion-fab (click)="atras()">
+            <ion-icon name="arrow-back" ></ion-icon>
+          </button>
+      </ion-fab>
+  
+  
+</ion-content>

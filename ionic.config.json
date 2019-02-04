@@ -1,0 +1,7 @@
+{
+  "name": "Clodesi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,22 @@
+
+<ion-header>
+
+        <ion-navbar>
+          <ion-title>Jersey Asimetrico</ion-title>
+        </ion-navbar>
+      
+      </ion-header>
+      
+      
+      <ion-content padding>
+        <ion-slides class="image-slider" loop="true" >
+          <ion-slide *ngFor="let img of images">
+            <img src="../../../assets/imgs/jerseis/jersey1/{{img}}" class="thum-img" imageViewer>
+          </ion-slide>
+        </ion-slides>
+        
+          <button ion-button color="danger"  icon-only><ion-icon name="heart"></ion-icon></button>
+          <button ion-button  color="danger" ><a href="https://www.bershka.com/es/mujer/colecci%C3%B3n/camisetas/camiseta-con-manga-asim%C3%A9trica-c1010193217p101871294.html?colorId=322" class="button button-dark">Comprar</a></button>
+        
+      
+      </ion-content>

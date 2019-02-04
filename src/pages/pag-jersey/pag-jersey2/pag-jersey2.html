@@ -1,0 +1,22 @@
+
+<ion-header>
+
+        <ion-navbar>
+          <ion-title>Jersey Bardot</ion-title>
+        </ion-navbar>
+      
+      </ion-header>
+      
+      
+      <ion-content padding>
+        <ion-slides class="image-slider" loop="true" >
+          <ion-slide *ngFor="let img of images">
+            <img src="../../../assets/imgs/jerseis/jersey2/{{img}}" class="thum-img" imageViewer>
+          </ion-slide>
+        </ion-slides>
+        
+          <button ion-button color="danger"  icon-only><ion-icon name="heart"></ion-icon></button>
+          <button ion-button  color="danger" ><a href="https://www.bershka.com/es/mujer/colecci%C3%B3n/camisetas/camiseta-con-cuello-bardot-c1010193217p101877174.html?colorId=605" class="button button-dark">Comprar</a></button>
+        
+      
+      </ion-content>
