@@ -1,3 +1,4 @@
+import { Fav } from './../../models/Fav-item/Fav-item.inteface';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,8 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pag-favoritos.html',
 })
 export class PagFavoritosPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  list : Fav;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public LFavPro: ListaFavProvider) {
   }
 
   ionViewDidLoad() {
@@ -23,3 +24,4 @@ export class PagFavoritosPage {
   }
 
 }
+

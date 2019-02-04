@@ -20,6 +20,7 @@ import {AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/datab
 
 import 'firebase/database';
 import { AngularFireModule } from '@angular/fire';
+import { ListaFavProvider } from '../providers/lista-fav/lista-fav';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyDLjQIylLhb61LhL9IKo9sC8tUiNC4lSS4",
@@ -67,7 +68,8 @@ export const firebaseConfig = {
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    ListaFavProvider
   ]
 })
 export class AppModule {
