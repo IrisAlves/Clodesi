@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Fav } from './../../models/Fav-item/Fav-item.inteface';
 import { ListaFavProvider } from './../../providers/lista-fav/lista-fav';
-import {Observable} from 'rxjs/Observable';
-import {map} from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators/map';
 
 @IonicPage()
 @Component({
@@ -17,6 +17,7 @@ export class PagFavoritosPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public LFavPro: ListaFavProvider) {
 
     this.list = navParams.get ("list");
+    
     this.listafav = this.LFavPro
         .getItemList()  
         .snapshotChanges() 
