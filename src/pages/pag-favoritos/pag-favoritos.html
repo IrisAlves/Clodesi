@@ -7,24 +7,44 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>PagFavoritos</ion-title>
+    <ion-title>Favoritos</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <ion-item-sliding *ngFor="let list of listafav| async">
+        <ion-item >
+         <ion-avatar item-left>
+           <img [src]="list.imagen">
+         </ion-avatar>
+         <h2>{{list.nombre}}</h2>
+       </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger"
+             (click)="borrar2(list)" >
+            <ion-icon name="trash"></ion-icon>
+            Borrar
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+  
+
+
+
  <!-- <ion-list>
     <ion-item *ngFor="let list of listafav | async">
       <ion-card class="f" color="light">
-        <img src={{lis.img}} />
+        <img src={{list.imagen}} />
         <ion-card-content>
           <ion-card-title class="titulo">
-            {{item.nom}}  
+            {{list.nombre}}  
             </ion-card-title>
-            <div class="precio">{{item.precio}}€</div>
         </ion-card-content>
       </ion-card>
     </ion-item>
-</ion-list> -->
+</ion-list>  -->
 </ion-content>

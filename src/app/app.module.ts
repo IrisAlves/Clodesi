@@ -14,7 +14,7 @@ import {IonicImageViewerModule} from 'ionic-img-viewer';
 import { PagJersey1Page } from '../pages/pag-jersey/pag-jersey1/pag-jersey1';
 import { PagJersey2Page } from '../pages/pag-jersey/pag-jersey2/pag-jersey2';
 import { PagChaq2Page } from '../pages/pag-chaquetas/pag-chaqueta2/pag-chaq2';
-import {AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
 
 // comando por si img-viewer da fallo: npm install --save ionic-img-viewer
 

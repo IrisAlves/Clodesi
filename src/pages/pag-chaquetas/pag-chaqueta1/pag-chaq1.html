@@ -8,15 +8,23 @@
   </ion-header>
   
   
-  <ion-content padding>
+  <ion-content >
+      <ion-row class="conjunto">
+        <ion-col>
+            <button   class="bt1"  ion-button color="danger" (click)="anadirfav('Cazadora plumon','../../../assets/imgs/chaquetas/chaqueta1/1.jpg')" icon-only><ion-icon name="heart"></ion-icon></button>
+        </ion-col>
+       <ion-col>
+          <h1 class="txt" >59,95€</h1>
+       </ion-col>
+        <ion-col>
+        <button  class="bt2" right ion-button  color="danger" ><a href="https://www.zara.com/es/es/cazadora-plum%C3%ADfero-capucha-p08073223.html?v1=8363277&v2=1180323" class="button button-dark">Comprar</a></button>
+      </ion-col>
+      </ion-row>
     <ion-slides class="image-slider" loop="true" >
       <ion-slide *ngFor="let img of images">
         <img src="../../../assets/imgs/chaquetas/chaqueta1/{{img}}" class="thum-img" imageViewer>
       </ion-slide>
     </ion-slides>
-    
-      <button ion-button color="danger" (click)="anadirfav('Cazadora plumon','../../../assets/imgs/chaquetas/chaqueta1/1.jpg')" icon-only><ion-icon name="heart"></ion-icon></button>
-      <button ion-button  color="danger" ><a href="https://www.zara.com/es/es/cazadora-plum%C3%ADfero-capucha-p08073223.html?v1=8363277&v2=1180323" class="button button-dark">Comprar</a></button>
-    
+     
   
   </ion-content>
