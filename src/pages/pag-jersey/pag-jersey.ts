@@ -12,7 +12,7 @@ import { PagJersey2Page } from './pag-jersey2/pag-jersey2';
   templateUrl: 'pag-jersey.html',
 })
 export class PagJerseyPage {
-
+  activeMenu: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
