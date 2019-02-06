@@ -9,14 +9,31 @@
       
       
       <ion-content padding>
+          <ion-row class="conjunto">
+              <ion-col>
+                  <button   class="bt1"  ion-button color="danger" (click)="anadirfav('Jersey Asimetrico','../../../assets/imgs/jerseis/jersey1/1.jpg')" icon-only><ion-icon name="heart"></ion-icon></button>
+              </ion-col>
+             <ion-col>
+                <h1 class="txt" >59,95€</h1>
+             </ion-col>
+              <ion-col>
+              <button  class="bt2" right ion-button  color="danger" ><a href="https://www.bershka.com/es/mujer/colecci%C3%B3n/camisetas/camiseta-con-manga-asim%C3%A9trica-c1010193217p101871294.html?colorId=322" class="button button-dark">Comprar</a></button>
+            </ion-col>
+            </ion-row>
+          <ion-slides class="image-slider" loop="true" >
+            <ion-slide *ngFor="let img of images">
+              <img src="../../../assets/imgs/jerseis/jersey1/{{img}}" class="thum-img" imageViewer>
+            </ion-slide>
+          </ion-slides>
+           
         <ion-slides class="image-slider" loop="true" >
           <ion-slide *ngFor="let img of images">
-            <img src="../../../assets/imgs/jerseis/jersey1/{{img}}" class="thum-img" imageViewer>
+            <img src="../../../assets/imgs/{{img}}" class="thum-img" imageViewer>
           </ion-slide>
         </ion-slides>
         
           <button ion-button color="danger"  icon-only><ion-icon name="heart"></ion-icon></button>
-          <button ion-button  color="danger" ><a href="https://www.bershka.com/es/mujer/colecci%C3%B3n/camisetas/camiseta-con-manga-asim%C3%A9trica-c1010193217p101871294.html?colorId=322" class="button button-dark">Comprar</a></button>
+          <button ion-button  color="danger" ><a  class="button button-dark">Comprar</a></button>
         
       
       </ion-content>
