@@ -9,14 +9,23 @@
       
       
       <ion-content padding>
-        <ion-slides class="image-slider" loop="true" >
-          <ion-slide *ngFor="let img of images">
-            <img src="../../../assets/imgs/jerseis/jersey2/{{img}}" class="thum-img" imageViewer>
-          </ion-slide>
-        </ion-slides>
-        
-          <button ion-button color="danger"  icon-only><ion-icon name="heart"></ion-icon></button>
-          <button ion-button  color="danger" ><a href="https://www.bershka.com/es/mujer/colecci%C3%B3n/camisetas/camiseta-con-cuello-bardot-c1010193217p101877174.html?colorId=605" class="button button-dark">Comprar</a></button>
+          <ion-row class="conjunto">
+              <ion-col>
+                  <button   class="bt1"  ion-button color="danger" (click)="anadirfav('Jersey Bardot','../../../assets/imgs/jerseis/jersey2/1.jpg')" icon-only><ion-icon name="heart"></ion-icon></button>
+              </ion-col>
+             <ion-col>
+                <h1 class="txt" >12,99€</h1>
+             </ion-col>
+              <ion-col>
+              <button  class="bt2" right ion-button  color="danger" ><a href="https://www.bershka.com/es/mujer/colecci%C3%B3n/camisetas/camiseta-con-cuello-bardot-c1010193217p101877174.html?colorId=605" class="button button-dark">Comprar</a></button>
+            </ion-col>
+            </ion-row>
+          <ion-slides class="image-slider" loop="true" >
+            <ion-slide *ngFor="let img of images">
+              <img src="../../../assets/imgs/jerseis/jersey2/{{img}}" class="thum-img" imageViewer>
+            </ion-slide>
+          </ion-slides>
+
         
       
       </ion-content>

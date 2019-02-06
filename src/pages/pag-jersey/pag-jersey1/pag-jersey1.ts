@@ -10,6 +10,9 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 export class PagJersey1Page {
 
   images=['1.jpg','2.jpg','3.jpg'];
+  
+  list:Array<{nombre: string, img: string}>;
+  lista:Fav;
   constructor(public navCtrl: NavController, public navParams: NavParams,public LFavPro: ListaFavProvider,public alertCtrl:AlertController) {
   }
 
@@ -17,5 +20,23 @@ export class PagJersey1Page {
     console.log('ionViewDidLoad PagJersey1Page');
   }
   
+  anadirfav(nomb:string,img:string){
+
+    this.lista = {
+      nombre : nomb,
+      imagen : img
+    };
+    this.LFavPro.addItem(this.lista).then ( ref =>{
+      console.log (ref.key);
+      // this.navCtrl.setRoot ("HomePage");
+    });
+
+    let alert = this.alertCtrl.create({
+      title: 'Aviso',
+      subTitle: 'Se ha añadido a Favoritos',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
 
 }
