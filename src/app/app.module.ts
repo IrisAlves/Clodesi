@@ -48,8 +48,8 @@ export const firebaseConfig = {
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicImageViewerModule,  
-    AngularFireDatabaseModule,
     AngularFireModule.initializeApp(firebaseConfig,'Clodesi'),
+    AngularFireDatabaseModule,
     
   ],
   bootstrap: [IonicApp],

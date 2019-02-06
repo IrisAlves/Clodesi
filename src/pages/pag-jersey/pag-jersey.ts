@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
 import { PagJersey1Page } from './pag-jersey1/pag-jersey1';
 import { PagJersey2Page } from './pag-jersey2/pag-jersey2';
 
@@ -26,7 +25,7 @@ export class PagJerseyPage {
     this.navCtrl.push(PagJersey2Page);
   }
   atras(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.pop();
   }
 
 }

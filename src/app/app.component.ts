@@ -5,8 +5,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { PagChaquetasPage } from '../pages/pag-chaquetas/pag-chaquetas';
-import { PagJerseyPage } from '../pages/pag-jersey/pag-jersey';
 import { PagFavoritosPage } from '../pages/pag-favoritos/pag-favoritos';
 import { PagAjustesPage } from '../pages/pag-ajustes/pag-ajustes';
 
@@ -26,8 +24,6 @@ export class MyApp {
 
     this.paginas=[
       {title:'Home',component:HomePage},
-      {title:'Chaquetas',component:PagChaquetasPage},
-      {title:'Jerseis',component:PagJerseyPage},
       {title:'Favoritos',component:PagFavoritosPage},
       {title:'Contacto',component:PagAjustesPage}
   ];

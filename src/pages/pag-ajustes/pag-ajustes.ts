@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+// 
+import { Observable } from 'rxjs';
+import { Fav } from '../../models/Fav-item/Fav-item.inteface';
+import { PagFavoritosPage } from '../pag-favoritos/pag-favoritos';
+import { ListaFavProvider } from '../../providers/lista-fav/lista-fav';
+import { map } from 'rxjs/operators';
 
-/**
- * Generated class for the PagAjustesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,8 +14,11 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
   templateUrl: 'pag-ajustes.html',
 })
 export class PagAjustesPage {
+  
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl:AlertController) {
+  constructor(public LFavPro: ListaFavProvider, public navCtrl: NavController, public navParams: NavParams,public alertCtrl:AlertController) 
+  {
+   
   }
 
   ionViewDidLoad() {

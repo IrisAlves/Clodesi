@@ -14,13 +14,14 @@
 
 
 <ion-content padding>
-    <ion-item-sliding *ngFor="let list of listafav | async">
-        <ion-item >
+    <ion-item-sliding  *ngFor="let list of listafav | async">
+        <ion-item>
          <ion-avatar item-left>
            <img [src]="list.imagen">
          </ion-avatar>
          <h2>{{list.nombre}}</h2>
        </ion-item>
+
         <ion-item-options side="right">
           <button ion-button color="danger"
              (click)="borrar2(list)" >

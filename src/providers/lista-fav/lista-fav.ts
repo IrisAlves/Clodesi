@@ -5,6 +5,9 @@ import { AngularFireDatabase } from 'angularfire2/database';
 
 @Injectable()
 export class ListaFavProvider {
+  snapshotChanges(): any {
+    throw new Error("Method not implemented. ERROR");
+  }
   private reffav = this.dba.list<Fav>('listafavoritos');
   constructor(private dba:AngularFireDatabase) {
    
@@ -22,5 +25,8 @@ export class ListaFavProvider {
 
   deleteItem(item:Fav){
     return this.reffav.remove (item.nombre);
+  }
+  mostrar(item:Fav){
+    return this.reffav.set (item.nombre,item);
   }
 }

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Fav } from './../../models/Fav-item/Fav-item.inteface';
+
 import { ListaFavProvider } from './../../providers/lista-fav/lista-fav';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators/map';
+ import { Observable } from 'rxjs';
+// import {map} from 'rxjs/operators';
 
 @IonicPage()
 @Component({
@@ -13,38 +14,47 @@ import { map } from 'rxjs/operators/map';
 export class PagFavoritosPage {
 
   listafav : Observable<Fav[]>;
-  list : any=PagFavoritosPage;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public LFavPro: ListaFavProvider) {
+  lista : Fav;
+  
+  constructor( private LFavPro: ListaFavProvider,public navCtrl: NavController, public navParams: NavParams)
+   {
 
-    this.list = navParams.get ("list");
+    // this.lista = navParams.get ("list");
     
-    this.listafav = this.LFavPro
-        .getItemList()  
-        .snapshotChanges() 
-        .pipe (map ( changes => {
-            return changes.map ( c=>(
-              {
-                key: c.payload.key,
-                ...c.payload.val(),
-              }
-            )
-            )
-        }
-        )
-        )
+    // this.listafav = this.LFavPro
+    // .getItemList()  //devuelve la DB LIST
+    // .snapshotChanges() //valores
+    // .pipe (map ( changes => {
+    //     return changes.map ( c=>(
+    //       {
+    //         key: c.payload.key,
+    //         ...c.payload.val(),
+    //       }
+    //     )
+    //     )
+    // }
+    // )
+    // )
+     this.LFavPro.mostrar(this.lista);
 
-  }
+                  console.log('holaa entre aqui');
+
+  }//fin construtor
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PagFavoritosPage');
   }
 
   borrar (indice:number){
-    this.list.splice(indice,1);
+   // this.lista.splice(indice,1);
   }
 
   borrar2 (list:Fav){
     this.LFavPro.deleteItem(list);
+  }
+  ver(item:Fav){
+this.LFavPro.mostrar(item);
+
   }
 
 }
