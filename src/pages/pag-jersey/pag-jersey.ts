@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PagJersey1Page } from './pag-jersey1/pag-jersey1';
 import { PagJersey2Page } from './pag-jersey2/pag-jersey2';
+import { PagJersey3Page } from './pag-jersey3/pag-jersey3';
 
 
 
@@ -23,6 +24,12 @@ export class PagJerseyPage {
   }
   abrir2(){
     this.navCtrl.push(PagJersey2Page);
+  }
+  abrir3(){
+    this.navCtrl.push(PagJersey3Page);
+  }
+  abrir4(){
+    //this.navCtrl.push(PagJersey4Page);
   }
   atras(){
     this.navCtrl.pop();
