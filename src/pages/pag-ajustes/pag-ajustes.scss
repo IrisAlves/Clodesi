@@ -8,9 +8,19 @@ page-pag-ajustes {
    height: 100%;
    
 }
-ion-card{
-   align-content: center;
-   top: 80%;
+.imagen{
+   margin-left: 20%;
+   margin-top:30%;
+   position: center;
+   width: auto;
+   height: auto;
+}
+
+.texto{
+   margin-top: 90%;
+   text-align: center;
+   font-size: 110%;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 }
