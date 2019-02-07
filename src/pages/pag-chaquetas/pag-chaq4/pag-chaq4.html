@@ -6,23 +6,24 @@
   </ion-navbar>
 
 </ion-header>
-<ion-row class="conjunto">
-    <ion-col>
-        <button ion-button color="danger" (click)="anadirfav('Abrigo Paño','../../../assets/imgs/chaquetas/chaqueta4/1.jpg')" icon-only><ion-icon name="heart"></ion-icon></button>
-    </ion-col>
-   <ion-col>
-      <h1 >59,99€</h1>
-   </ion-col>
-    <ion-col>
-    <button  right ion-button  color="danger" ><a href="https://www.stradivarius.com/es/nueva-colecci%C3%B3n/ropa/compra-por-producto/abrigos-y-chaquetas/ver-todo/abrigo-pa%C3%B1o-cintur%C3%B3n-c1020140016p301031013.html?colorId=101" class="button button-dark">Comprar</a></button>
-  </ion-col>
-  </ion-row>
-<ion-slides class="image-slider" loop="true" >
-  <ion-slide *ngFor="let img of images">
-    <img src="../../../assets/imgs/chaquetas/chaqueta4/{{img}}" class="thum-img" imageViewer>
-  </ion-slide>
-</ion-slides>
+
+
 
 <ion-content padding>
-
+    <ion-row class="conjunto">
+        <ion-col>
+            <button ion-button color="danger" (click)="anadirfav('Abrigo Paño','../../../assets/imgs/chaquetas/chaqueta4/1.jpg')" icon-only><ion-icon name="heart"></ion-icon></button>
+        </ion-col>
+       <ion-col>
+          <h1 >59,99€</h1>
+       </ion-col>
+        <ion-col>
+        <button  right ion-button  color="danger" ><a href="https://www.stradivarius.com/es/nueva-colecci%C3%B3n/ropa/compra-por-producto/abrigos-y-chaquetas/ver-todo/abrigo-pa%C3%B1o-cintur%C3%B3n-c1020140016p301031013.html?colorId=101" class="button button-dark">Comprar</a></button>
+      </ion-col>
+      </ion-row>
+    <ion-slides class="image-slider" loop="true" >
+      <ion-slide *ngFor="let img of images">
+        <img src="../../../assets/imgs/chaquetas/chaqueta4/{{img}}" class="thum-img" imageViewer>
+      </ion-slide>
+    </ion-slides>
 </ion-content>
