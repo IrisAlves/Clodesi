@@ -22,6 +22,7 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import 'firebase/database';
 import { AngularFireModule } from '@angular/fire';
 import { ListaFavProvider } from '../providers/lista-fav/lista-fav';
+import { PagJersey4Page } from '../pages/pag-jersey/pag-jersey4/pag-jersey4';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyDLjQIylLhb61LhL9IKo9sC8tUiNC4lSS4",
@@ -44,7 +45,8 @@ export const firebaseConfig = {
     PagJerseyPage,
     PagJersey1Page,
     PagJersey2Page,
-    PagJersey3Page
+    PagJersey3Page,
+    PagJersey4Page
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,8 @@ export const firebaseConfig = {
     PagJerseyPage,
     PagJersey1Page,
     PagJersey2Page,
-    PagJersey3Page
+    PagJersey3Page,
+    PagJersey4Page
   ],
   providers: [
     StatusBar,
