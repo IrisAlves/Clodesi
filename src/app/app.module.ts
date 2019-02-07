@@ -9,11 +9,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { PagChaquetasPage } from '../pages/pag-chaquetas/pag-chaquetas';
 import { PagJerseyPage } from '../pages/pag-jersey/pag-jersey';
-import { PagChaq1Page } from '../pages/pag-chaquetas/pag-chaqueta1/pag-chaq1';
+import { PagChaq1Page } from '../pages/pag-chaquetas/pag-chaq1/pag-chaq1';
 import {IonicImageViewerModule} from 'ionic-img-viewer';
 import { PagJersey1Page } from '../pages/pag-jersey/pag-jersey1/pag-jersey1';
 import { PagJersey2Page } from '../pages/pag-jersey/pag-jersey2/pag-jersey2';
-import { PagChaq2Page } from '../pages/pag-chaquetas/pag-chaqueta2/pag-chaq2';
+import { PagChaq2Page } from '../pages/pag-chaquetas/pag-chaq2/pag-chaq2';
 import { PagJersey3Page } from '../pages/pag-jersey/pag-jersey3/pag-jersey3';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 

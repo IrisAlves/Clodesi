@@ -20,18 +20,23 @@ export class PagJerseyPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PagJerseyPage');
   }
+
   abrir1(){
     this.navCtrl.push(PagJersey1Page);
   }
+
   abrir2(){
     this.navCtrl.push(PagJersey2Page);
   }
+
   abrir3(){
     this.navCtrl.push(PagJersey3Page);
   }
+  
   abrir4(){
     this.navCtrl.push(PagJersey4Page);
   }
+  
   atras(){
     this.navCtrl.pop();
   }
