@@ -26,7 +26,10 @@ export class ListaFavProvider {
   deleteItem(item:Fav){
     return this.reffav.remove (item.nombre);
   }
+
   mostrar(item:Fav){
     return this.reffav.set (item.nombre,item);
   }
+  
+ 
 }
