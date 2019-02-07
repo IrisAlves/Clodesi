@@ -23,6 +23,8 @@ import 'firebase/database';
 import { AngularFireModule } from '@angular/fire';
 import { ListaFavProvider } from '../providers/lista-fav/lista-fav';
 import { PagJersey4Page } from '../pages/pag-jersey/pag-jersey4/pag-jersey4';
+import { PagChaq3Page } from '../pages/pag-chaquetas/pag-chaq3/pag-chaq3';
+import { PagChaq4Page } from '../pages/pag-chaquetas/pag-chaq4/pag-chaq4';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyDLjQIylLhb61LhL9IKo9sC8tUiNC4lSS4",
@@ -42,6 +44,8 @@ export const firebaseConfig = {
     PagChaquetasPage,
     PagChaq1Page,
     PagChaq2Page,
+    PagChaq3Page,    
+    PagChaq4Page,
     PagJerseyPage,
     PagJersey1Page,
     PagJersey2Page,
@@ -65,6 +69,8 @@ export const firebaseConfig = {
     PagChaquetasPage,
     PagChaq1Page,
     PagChaq2Page,
+    PagChaq3Page,    
+    PagChaq4Page,
     PagJerseyPage,
     PagJersey1Page,
     PagJersey2Page,
