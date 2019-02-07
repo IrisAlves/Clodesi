@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, List } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Fav } from './../../models/Fav-item/Fav-item.inteface';
 
 import { ListaFavProvider } from './../../providers/lista-fav/lista-fav';
@@ -18,7 +18,7 @@ export class PagFavoritosPage {
   lista : Fav;
   actionSheetCtrl: any;
   
-  constructor( private LFavPro: ListaFavProvider,public navCtrl: NavController, public navParams: NavParams)
+  constructor( private LFavPro: ListaFavProvider,public navCtrl: NavController, public navParams: NavParams,private toast: ToastController)
    {
 
     this.lista = navParams.get ("list");
@@ -49,12 +49,21 @@ export class PagFavoritosPage {
 
 
   borrar2 (item:Fav){
-    
-    this.LFavPro.deleteItem(item);
+    this.LFavPro.deleteItem(item)
+        .then (()=>{
+          this.mensaje("Articulo borrado");
+          //this.navCtrl.setRoot("HomePage");
+        }
+        );
   }
-  
-  item(item: any): any {
-    throw new Error("Method not implemented.");
+
+  mensaje (texto:string)
+  {
+    const toast = this.toast.create({
+      message: texto,
+      duration: 3000
+    });
+    toast.present();
   }
 
 
